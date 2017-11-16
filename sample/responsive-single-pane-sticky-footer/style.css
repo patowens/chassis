@@ -1,0 +1,163 @@
+
+html, body {
+  height: 100%;
+  min-width: 320px;
+  overflow-x: hidden;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+header {
+  background:#e3e3e4; 
+}
+
+.top [data-placeholder] {
+  background: #cccccc;
+  color: #cccccc;
+}
+
+body {
+  display: flex;  /*ensure calculated spacing between header and footer*/
+  flex-direction: column;
+  height: 100%; /* IE11 */
+}
+
+.top {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width:100%;
+  height:60px;
+  padding:10px;
+  box-sizing: border-box;
+  background:#aaaaaa;
+  z-index: 999;
+}
+
+.top-group {
+  padding:5px;
+  font-size:25px;
+  overflow: hidden;
+}
+
+.top-group.left {
+  float:left;
+}
+
+.top-group.right {
+  float:right;
+}
+
+.top-group.right.active {
+  overflow: visible;
+  width:100%;
+}
+
+.top-group.right.active .menu-item {
+  display: block;
+  width: 100%;
+  float: none;
+}
+
+.top-group.right .menu-item {
+  background:#ff4178;
+  display:none;
+  padding:10px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #e53a6c;
+}
+
+@media screen and (min-width: 600px) {
+  /* hide that menu icon! */
+  .top .icon { display: none; }
+  
+  /* float this menu group to the right and let it be sized by its content! */
+  .top-group.right,
+  .top-group.right.active {
+    float: right;
+    width: auto;
+  }
+  
+  /* float these menu items side by side and let them be sized by their content, remove borders and padding */
+  .top-group.right .menu-item,
+  .top-group.right.active .menu-item {
+    display: block;
+    width: auto;
+    float:left;
+    padding: 0px;
+    border-bottom: 0px;
+    margin:0px 5px;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .top-group.right .menu-item [data-placeholder] {
+    background: #c5325d;
+    color: #c5325d;
+  }
+
+  .top-group.right .menu-item:hover {
+    background: #e53a6c;
+  }
+}
+
+.top .icon {
+  margin:5px;
+  padding:0px;
+  font-size:25px;
+  float:right;
+  background: #ff4178;
+  color: #ff4178;
+}
+
+.top .icon:hover {
+  background: #e53a6c;
+  color: #e53a6c;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.middle {
+  padding:20px;
+  box-sizing: border-box;
+  
+  /* compensate for surroundings */
+  flex-grow: 1; /* in comparison to other flex items, how should this grow?, 
+  being the only item, it should completely occupy the remaining space. */
+  margin-top:60px; /* shift down below header */
+}
+
+.middle .inner {
+  max-width: 600px;
+  margin: 0px auto;
+}
+
+.bottom {
+  width:100%;
+  background: #eeeeee;
+  box-sizing: border-box;
+  padding:10px 20px;
+}
+
+.bottom .inner {
+  max-width: 600px;
+  margin: 0px auto;
+}
+
+button#button {
+  padding:9px 10px;
+  background:#999999;
+  color:#ffffff;
+  font-size:12px;
+  font-weight: bold;
+  border:0px;
+  display:inline-block;
+}
+
+#button:hover {
+  background:#777777;
+}

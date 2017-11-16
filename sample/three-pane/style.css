@@ -1,0 +1,90 @@
+.site.three-pane {
+  position:absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.main {
+  width:100%;
+  position:absolute;
+  top: 60px;
+  bottom:0px;
+}
+
+.main-left {
+  position: absolute;
+  width: 20%;
+  height: 100%;
+  overflow: auto;
+}
+
+.main-middle {
+  position: absolute;
+  width:60%;
+  left:20%;
+  top:0;
+  height:100%;
+  box-sizing: border-box;
+  overflow: auto;
+  padding:70px 10%;
+}
+
+.main-right {
+  position: absolute;
+  width: 20%;
+  height: 100%;
+  right: 0px;
+  overflow: auto;
+  border-left:1px solid #eeeeee;
+}
+
+.top [data-placeholder] {
+  background: #cccccc;
+  color: #cccccc;
+}
+
+.top {
+  display:block;
+  position:absolute;
+  width: 100%;
+  overflow:hidden;
+  padding:10px;
+  box-sizing: border-box;
+  height:60px;
+  background:#aaaaaa;
+}
+
+.top-group {
+  padding:5px;
+  font-size:25px;
+}
+
+.top-group.left {
+  float:left;
+}
+
+.top-group.right {
+  float:right;
+}
+
+/* -- mock items, images and rows -- */
+.img-placeholder {
+  width:200px;
+  height:180px;
+  border:1px solid #cccccc;
+  background: #cccccc;
+  display:inline-block;
+  margin:10px 10px 10px 0px;
+}
+
+.item {
+  height:100px;
+  border-bottom:1px solid #eeeeee;
+}
+
+.main-right .item {
+  height:70px;
+  border-bottom:1px solid #eeeeee; 
+}

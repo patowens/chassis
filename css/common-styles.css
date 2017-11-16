@@ -1,0 +1,40 @@
+/* ELEMENTS */
+h1 { font-size:3em; line-height:130%; }
+h2 { font-size:2.2em; line-height:130%; }
+h3 { font-size:2em; line-height:130%; font-weight: normal; }
+h4 { font-size:1.5em; line-height:130%; }
+h5 { font-size:1.3em; line-height:130%; }
+
+/* LAYOUT */
+body { 
+  margin: 0px; 
+  padding: 0px; 
+  background: #f6f6f7; 
+  font-family: sans-serif;
+}
+
+.site.thin {
+  margin: 0px auto;
+  max-width: 680px;
+}
+
+.padded { 
+  padding: 10px 30px 20px; 
+}
+
+.padded-large { 
+  padding: 20px 30px 50px; 
+}
+
+.padded-jumbo {
+  padding: 90px 30px 120px; 
+}
+
+/* TEXT */
+.text-centered {
+  text-align: center;
+}
+
+.bold { 
+  font-weight: bold; 
+}

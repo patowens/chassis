@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <title>Chassis | Responsive Single Pane Sticky Footer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="../../css/common-styles.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/mock-placeholders.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body class="site single-pane-top-nav-footer">
+    <div class="top">
+      <div class="top-group left">
+        <span class="logo" data-placeholder>Awesome Site</span>  
+      </div>
+      <span class="icon" data-placeholder onclick="toggleMenu()">xxx</span>
+      <div id="menu" class="top-group right">
+        <span class="menu-item"><span data-placeholder>One</span></span>
+        <span class="menu-item"><span data-placeholder>Two</span></span>
+        <span class="menu-item"><span data-placeholder>Three</span></span>
+        <span class="menu-item"><span data-placeholder>Four</span></span>
+      </div>
+    </div>
+      
+    <div class="middle">
+      <div class="outer">
+        <div class="inner">
+          <p><span data-placeholder>This middle section does not have a defined height but it does occupy all the space between the header and footer.  It would push the footer down if it had more content too.</span></p>
+          <button id="button" onclick="addContent()">Add Content</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom">
+      <div class="outer">
+        <div class="inner">
+          <p><span data-placeholder>I am a footer with important fine print.</p>
+          <p><span data-placeholder>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></p>
+          <p><span data-placeholder>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</span></p>
+          <p><span data-placeholder>Lorem ipsum.</span></p>
+        </div>
+      </div>
+    </div>
+    <script>
+      function addContent () {
+        let randomLength = Math.floor(Math.random() * 300 + 100)
+        let randomString = new Array(randomLength + 1).join('foo ');
+        let htmlContent = `<p><span data-placeholder>${randomString}</span></p>`;
+        
+        let button = document.getElementById('button');
+        button.insertAdjacentHTML('beforeBegin', htmlContent);
+      }
+      function toggleMenu () {
+        let menuGroupEl = document.getElementById('menu');
+        let isActive = menuGroupEl.classList.contains('active')
+        if (!isActive) {
+          menuGroupEl.classList.add('active')
+        } else {
+          menuGroupEl.classList.remove('active')
+        }
+      }
+    </script>
+  </body>
+</html>
+

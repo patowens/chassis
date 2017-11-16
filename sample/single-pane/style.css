@@ -1,0 +1,51 @@
+header {
+  background:#e3e3e4; 
+}
+
+.top [data-placeholder] {
+  background: #cccccc;
+  color: #cccccc;
+}
+
+.top {
+  display:block;
+  overflow:hidden;
+  padding:10px;
+  background:#aaaaaa;
+}
+
+.top-group {
+  padding:5px;
+  font-size:25px;
+}
+
+.top-group.left {
+  float:left;
+}
+
+.top-group.right {
+  float:right;
+}
+
+.headline-heading {
+  display:block;
+  margin:40px 10px;
+}
+
+.headline-body {
+  line-height: 180%;
+}
+
+.grid {
+  display:flex;
+  justify-content: space-around;
+  flex-flow: row;
+}
+
+.card {
+  height:200px;
+  width:140px;
+  background:#eeeeee;
+  flex: 1 0 auto;
+  margin:5px;
+}

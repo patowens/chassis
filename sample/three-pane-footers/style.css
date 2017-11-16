@@ -1,0 +1,161 @@
+.site.three-pane {
+  display: block;
+  position:absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  overflow:hidden;
+}
+
+/* -- TOP -- */
+.top {
+  display:block;
+  position:absolute;
+  width: 100%;
+  overflow:hidden;
+  padding:10px;
+  box-sizing: border-box;
+  height:60px;
+  background:#aaaaaa;
+}
+
+.top-group {
+  padding:5px;
+  font-size:25px;
+}
+
+.top-group.left {
+  float:left;
+}
+
+.top-group.right {
+  float:right;
+}
+
+/* -- MIDDLE -- */
+.main {
+  width:100%;
+  position:absolute;
+  top: 60px;
+  bottom:0px;
+}
+
+.main-left {
+  position: absolute;
+  width: 20%;
+  height: auto;
+  top:0;
+  bottom:60px;
+  overflow: auto;
+}
+
+.main-middle {
+  position: absolute;
+  width:60%;
+  left:20%;
+  top:0;
+  bottom:0;
+  height:auto;
+  box-sizing: border-box;
+  overflow: auto;
+  padding:70px 10%;
+}
+
+.main-right {
+  position: absolute;
+  width: 20%;
+  height: auto;
+  right: 0px;
+  top:0;
+  bottom:94px;
+  overflow: auto;
+  border-left:1px solid #eeeeee;
+}
+
+/* -- BOTTOM -- */
+.bottom {
+  position: absolute;
+  bottom: 0px;
+  height:94px;
+  width:100%;
+}
+
+.bottom-left {
+  position:absolute;
+  width:20%;
+  height:60px;
+  background:#e2e2e2;
+  box-sizing: border-box;
+  bottom:0px;
+  padding:22px;
+}
+
+.bottom-middle {
+  position:fixed;
+  width:60%;
+  height:0px;
+  left:20%;
+  background:rgba(0,0,0,0.05);
+  bottom:0;
+}
+
+.bottom-right {
+  position:absolute;
+  right:0px;
+  width: 20%;
+  overflow:hidden;
+  height:94px;
+  background: #ffffff;
+  box-sizing: border-box;
+}
+
+.bottom-right .grid {
+  text-align: justify;
+  box-sizing: border-box;
+  text-justify: inter-word;
+  font-size: 0;
+  padding: 4% 4% 0 4%;
+}
+
+.bottom-right .grid .box {
+  display:inline-block;
+  font-size: 1rem;
+  border:1px solid #eeeeee;
+  color:#eeeeee;
+  height:64px;
+  width: 25%;
+  padding: 2%;
+}
+
+.break {
+  display: inline-block;
+  width: 25%;
+  height: 0;
+}
+
+
+/* -- mock items, images and rows -- */
+.img-placeholder {
+  width:200px;
+  height:180px;
+  border:1px solid #cccccc;
+  background: #cccccc;
+  display:inline-block;
+  margin:10px 10px 10px 0px;
+}
+
+.item {
+  height:100px;
+  border-bottom:1px solid #eeeeee;
+}
+
+.main-right .item {
+  height:70px;
+  border-bottom:1px solid #eeeeee; 
+}
+
+.top [data-placeholder] {
+  background: #cccccc;
+  color: #cccccc;
+}

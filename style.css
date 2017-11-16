@@ -1,0 +1,73 @@
+.picker {
+  text-align: right;
+  margin-top:10px;
+}
+
+.picker label {
+  margin-left: 15px;
+}
+
+.picker label input {
+  position:relative;
+  bottom: 2px;
+}
+
+.picker label.disabled {
+  color: #dddddd;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+header {
+  background:#e3e3e4; 
+}
+
+.jumbo {
+  font-size: 1.5em;
+  list-style: upper-roman;
+}
+
+.jumbo li {
+  padding:8px;
+  margin-bottom:20px;
+}
+
+.jumbo.blue li:hover {
+  background: #6cd9ee;
+}
+
+.jumbo.pink li:hover {
+  background: #ee6c9c;
+}
+
+.jumbo.yellow li:hover {
+  background: #eeea6c;
+}
+
+.jumbo.green li:hover {
+  background: #71ee64;
+}
+
+.jumbo li p {
+  font-size: .65em;
+}
+
+.jumbo li label {
+  font-weight: bold;
+}
+
+.jumbo li label::after {
+  content: ": ";
+}
+
+.jumbo li.disabled a {
+  color: #cccccc;
+}
+
+.jumbo li.disabled:hover {
+  background: #eeeeee !important;
+}
+
+.strike {
+  text-decoration: line-through;
+}

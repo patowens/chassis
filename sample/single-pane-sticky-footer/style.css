@@ -1,0 +1,82 @@
+
+html, body {
+  height: 100%;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+header {
+  background:#e3e3e4; 
+}
+
+.top [data-placeholder] {
+  background: #cccccc;
+  color: #cccccc;
+}
+
+body {
+  display: flex;  /*ensure calculated spacing between header and footer*/
+  flex-direction: column;
+  height: 100%; /* IE11 */
+}
+
+.top {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow:hidden;
+  width:100%;
+  height:60px;
+  padding:10px;
+  box-sizing: border-box;
+  background:#aaaaaa;
+  z-index: 999;
+}
+
+.top-group {
+  padding:5px;
+  font-size:25px;
+}
+
+.top-group.left {
+  float:left;
+}
+
+.top-group.right {
+  float:right;
+}
+
+.middle {
+  padding:20px;
+  box-sizing: border-box;
+  
+  /* compensate for surroundings */
+  flex-grow: 1; /* in comparison to other flex items, how should this grow?, 
+  being the only item, it should completely occupy the remaining space. */
+  margin-top:60px; /* shift down below header */
+}
+
+.bottom {
+  width:100%;
+  background: #eeeeee;
+  box-sizing: border-box;
+  padding:10px 20px;
+}
+
+button#button {
+  padding:9px 10px;
+  background:#999999;
+  color:#ffffff;
+  font-size:12px;
+  font-weight: bold;
+  border:0px;
+  display:inline-block;
+}
+
+#button:hover {
+  background:#777777;
+}

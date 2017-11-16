@@ -1,0 +1,27 @@
+article:nth-child(odd) [data-placeholder] {
+  background: #eeeeee;
+  color:#eeeeee;
+}
+
+article:nth-child(even) [data-placeholder] {
+  background: #e6e6e7;
+  color:#e6e6e7;
+}
+
+article:nth-child(even) {
+  display: block;
+  background-color: #f1f1f2;
+}
+
+[data-placeholder] {
+  background: #cccccc;
+  color: #cccccc;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* UNCOMMENT FOR SELECTABLE PLACEHOLDERS
+  [data-placeholder]::selection {
+  background: #6cd9ee;
+  color:#ffffff;
+}*/
